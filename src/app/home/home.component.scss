@@ -1,0 +1,35 @@
+.profile-pic {
+    width: 300px;
+    height: 400px;
+}
+
+.img-rectangle {
+    clip-path:ellipse(50% 37%);
+}
+
+.helloMsg {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    justify-content: space-evenly;
+}
+
+.DL-cv {
+    height: 50px;
+    background-color: #01bef2;
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.dl-picto {
+    margin-right: 5px;
+}
+
+.noDefaultBehaviour {
+    text-decoration: none;
+    color: white;
+}

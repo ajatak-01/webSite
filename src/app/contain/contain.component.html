@@ -1,0 +1,19 @@
+<div class="main">
+    @switch (tabService.currentTab) {
+        @case (navBarList.home) {
+            <app-home></app-home>
+        }
+        @case (navBarList.skills) {
+            <app-skills></app-skills>
+        }
+        @case (navBarList.formations) {
+            <app-formation></app-formation>
+        }
+        @case (navBarList.experiences) {
+            <app-xp></app-xp>
+        }
+        @case (navBarList.contact) {
+            <app-contact></app-contact>
+        }
+    }
+</div>

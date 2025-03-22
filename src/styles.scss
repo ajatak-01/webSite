@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+.hbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.vobx {
+    display: flex;
+    flex-direction: column;
+}
+
+body, html {
+    margin: 0;
+}

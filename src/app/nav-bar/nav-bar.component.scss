@@ -1,0 +1,36 @@
+.navBar {
+    justify-content: space-between;
+    background-color: rgb(87,88,90);
+    box-shadow: 0px 0px 2px 2px rgba(10, 10, 10, 0.2);
+}
+
+.title {
+    color: white;
+    height: 50px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.button {
+    height: 100%;
+    background-color: rgb(87, 88, 90);
+    border: none;
+    color: #c4c2c2;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #01bef2;
+    color: white;
+    border-bottom: solid 2px white;
+}
+
+.switchLangButton {
+    background-color: rgb(87, 88, 90);
+    border: none;
+    color: #c4c2c2;
+    cursor: pointer;
+}

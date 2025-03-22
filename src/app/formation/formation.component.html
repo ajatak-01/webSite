@@ -1,0 +1,25 @@
+<div class="padding-top hbox">
+    <div>
+        <img class="epitech-pic" src="assets/Epitech.png"/>
+    </div>
+    <div class="epitech-main">
+        <app-experience-title 
+        [title]="'EPITECH - EUROPEAN INSTITUTE OF TECHNOLOGY'" 
+        [dates]="trad.getTrad('epitechDate')"
+        [location]="'Marseille, France'">
+        </app-experience-title>
+    </div>
+</div>
+
+<div class="padding-top hbox">
+    <div>
+        <img class="griffith-pic" src="assets/Griffith-College.jpg"/>
+    </div>
+    <div class="griffith-main">
+        <app-experience-title 
+        [title]="trad.getTrad('griffithLabel')" 
+        [dates]="trad.getTrad('griffithDate')"
+        [location]="'Griffith College, Dublin'">
+        </app-experience-title>
+    </div>
+</div>
