@@ -1,0 +1,16 @@
+.main {
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.containt {
+    display: flex;
+    width: 100%;
+}
+
+.containt-side {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}

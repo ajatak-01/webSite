@@ -1,0 +1,83 @@
+<div class="padding-top hbox">
+    <div>
+        <img class="accenta-pic" src="assets/accenta.jpg"/>
+    </div>
+    <div class="accenta-main">
+        <app-experience-title 
+        [title]="trad.getTrad('accentaTitle')" 
+        [dates]="trad.getTrad('accentaDates')"
+        [location]="trad.getTrad('accentaLocation')">
+        </app-experience-title>
+        <ul>
+            <li>{{trad.getTrad('accentaAngular')}}</li>
+            <li>{{trad.getTrad('accentaNewFeatures')}}</li>
+            <li>{{trad.getTrad('accentaBugs')}}</li>
+            <li>{{trad.getTrad('accentaConception')}}</li>
+            <br>
+            <li>{{trad.getTrad('accentaScrum')}}</li>
+            <li>{{trad.getTrad('accentaPair')}}</li>
+            <li>{{trad.getTrad('accentaRetroCode')}}</li>
+            <li>{{trad.getTrad('accentaPokerPlanning')}}</li>
+            <br>
+            <li>{{trad.getTrad('accendaDoc')}}</li>
+            <li>{{trad.getTrad('accentaMaj')}}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="padding-top hbox">
+    <div>
+        <img class="optimix-pic" src="assets/optimix.png"/>
+    </div>
+    <div class="optimix-main">
+        <app-experience-title 
+        [title]="trad.getTrad('optimixTitle')" 
+        [dates]="trad.getTrad('optimixDates')"
+        [location]="trad.getTrad('optimixLocation')">
+        </app-experience-title>
+        <ul>
+            <li>{{trad.getTrad('optimixScripts')}}</li>
+            <li>{{trad.getTrad('optimixBack')}}</li>
+            <li>{{trad.getTrad('optimixAngular')}}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="padding-top hbox">
+    <div class="solutec-pic-container">
+        <img class="solutec-pic" src="assets/solutec.jpg"/>
+    </div>
+    <div class="solutec-main">
+        <app-experience-title 
+        [title]="trad.getTrad('solutecTitle')" 
+        [dates]="trad.getTrad('solutecDate')"
+        [location]="trad.getTrad('solutecLocation')">
+        </app-experience-title>
+        <ul>
+            <li>{{trad.getTrad('solutecDescribe')}}</li>
+
+            <br>
+            <app-experience-title 
+            [title]="trad.getTrad('locamTitle')" 
+            [dates]="trad.getTrad('locamDate')"
+            [location]="trad.getTrad('locamLocation')">
+            </app-experience-title>
+            <ul>
+                <li>{{trad.getTrad('locamRecette')}}</li>
+            </ul>
+
+            <br>
+            <app-experience-title 
+            [title]="trad.getTrad('apicilTitle')" 
+            [dates]="trad.getTrad('apicilDate')"
+            [location]="trad.getTrad('apicilLocation')">
+            </app-experience-title>
+            <ul>
+                <li>{{trad.getTrad('apicilPerl')}}</li>
+                <li>{{trad.getTrad('apicildevPerl')}}</li>
+                <li>{{trad.getTrad('apicilCSV')}}</li>
+                <li>{{trad.getTrad('apicilScripts')}}</li>
+            </ul>
+        </ul>
+    </div>
+</div>

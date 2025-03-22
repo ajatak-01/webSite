@@ -1,0 +1,14 @@
+<div class="hbox navBar">
+    <div class="title">
+        Cédric Gibelli
+    </div>
+    <div class="hbox">
+        <div *ngFor="let list of buttonList">
+            <button (click)="switchTab(list)" class="button">{{tradService.getTrad(list)}}</button>
+        </div>
+        <select class="switchLangButton" (change)="switchLang($event)">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+</div>
