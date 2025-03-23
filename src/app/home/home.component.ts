@@ -9,4 +9,8 @@ import { TranslateService } from '../translate.service';
 })
 export class HomeComponent {
   constructor(public trad: TranslateService) {}
+
+  getPicHref() {
+    return 'assets/CV-' + this.trad.currentLang +'.pdf';
+  }
 }
