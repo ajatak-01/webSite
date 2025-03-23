@@ -1,7 +1,6 @@
 .main {
     justify-content: space-around;
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
+    display: flex;
 }
 
 .containt {
@@ -13,4 +12,34 @@
     width: 50%;
     justify-content: center;
     display: flex;
+}
+
+.rightSide {
+    border-left: 1px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.leftSide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.greyColor {
+    background-color: rgb(87, 88, 90);
+}
+
+ul {
+    list-style-type: none;
 }

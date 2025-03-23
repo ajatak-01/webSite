@@ -41,6 +41,10 @@ export class TranslateService {
     communication: 'Excellente communication et esprit d\'équipe',
     angular: 'Maîtrise des langages HTLM/SCSS, Javascript et du framework angular',
     php: 'Bonnes compétences en PHP',
+    french: 'Français => Langue maternelle',
+    english: 'Anglais => Professionnel',
+    german: 'Allemand => Notions',
+    languages: 'Langues',
 
     //formation
     epitechDate: 'septembre 2014 - juin 2019',
@@ -97,7 +101,7 @@ export class TranslateService {
     apicilScripts: 'Architectures des scripts',
 
     //contact
-    contactJob: 'Je suis à la recherche d\'un emplois en Suisse proche de la frontière française.',
+    contactJob: 'Je suis à la recherche d\'un emploi en Suisse proche de la frontière française.',
     contactFullStack: 'Je recherche un poste de développeur web fullstack ou front.',
     contactFront: 'Pour la stack front end, je souhaite travailler avec Angular.',
     contactBack: 'Pour la stack back end, j\'ai utilisé koseven en PHP mais je suis ouvert à d\'autres stack et je suis désireux d\'apprendre.',
@@ -108,22 +112,30 @@ export class TranslateService {
   //#region ANGLAIS
 
   englishTranslate = {
+    //tab
     home: 'Home',
     skills: 'Skills',
     formations: 'Education',
     experiences: 'Experiences',
     contact: 'Contact',
 
+    //home
     hello: 'Hello,',
     imCedric: 'I am Cédric',
     imDev: 'I am web developer.',
     dlCv: 'Download my resume',
 
+    //Compétences
     agile: 'Expertise in Agile methodologies',
     communication: 'Excellent communication and teamwork skills',
     angular: 'Expertise in HTML/SCSS, JavaScript, and the Angular framework',
     php: 'Good PHP skills',
+    french: 'French => Native Language',
+    english: 'English => Professionnal',
+    german: 'German => Basics',
+    languages: 'Languages',
 
+    //formation
     epitechDate: 'september 2014 - june 2019',
     griffithLabel: 'YEAR ABROAD IN IRLANDE',
     griffithDate: 'september 2017 - june 2018',
