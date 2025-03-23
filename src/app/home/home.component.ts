@@ -11,6 +11,6 @@ export class HomeComponent {
   constructor(public trad: TranslateService) {}
 
   getPicHref() {
-    return 'assets/CV-' + this.trad.currentLang +'.pdf';
+    return 'assets/CV-cedric-gibelli-' + this.trad.currentLang +'.pdf';
   }
 }
