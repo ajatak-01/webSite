@@ -105,7 +105,7 @@ export class TranslateService {
     contactFullStack: 'Je recherche un poste de développeur web fullstack ou front.',
     contactFront: 'Pour la stack front end, je souhaite travailler avec Angular.',
     contactBack: 'Pour la stack back end, j\'ai utilisé koseven en PHP mais je suis ouvert à d\'autres stack et je suis désireux d\'apprendre.',
-    contactCannaux: 'Vous pouvez me contacter via les trois canaux :'
+    contactCannaux: 'Vous pouvez me contacter via ces canaux :'
   }
   //#endregion
 
