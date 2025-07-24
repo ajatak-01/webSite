@@ -6,10 +6,11 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ContactComponent } from '../contact/contact.component';
 import { FormationComponent } from '../formation/formation.component';
 import { XpComponent } from '../xp/xp.component';
+import { CandidaturesModule } from '../candidatures/candidatures.module';
 
 @Component({
   selector: 'app-contain',
-  imports: [HomeComponent, SkillsComponent, ContactComponent, FormationComponent, XpComponent],
+  imports: [HomeComponent, SkillsComponent, ContactComponent, FormationComponent, XpComponent, CandidaturesModule],
   templateUrl: './contain.component.html',
   styleUrl: './contain.component.scss'
 })

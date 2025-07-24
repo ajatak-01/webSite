@@ -8,7 +8,8 @@ export enum NavBarTabList  {
   skills = 'skills',
   formations = 'formations',
   experiences = 'experiences',
-  contact = 'contact'
+  contact = 'contact',
+  candidate = 'candidate'
 }
 
 @Component({
@@ -20,7 +21,7 @@ export enum NavBarTabList  {
 export class NavBarComponent {
     constructor(public tradService: TranslateService, private tabService: TabService) {}
 
-    buttonList = [NavBarTabList.home, NavBarTabList.skills, NavBarTabList.formations, NavBarTabList.experiences, NavBarTabList.contact];
+    buttonList = [NavBarTabList.candidate, NavBarTabList.home, NavBarTabList.skills, NavBarTabList.formations, NavBarTabList.experiences, NavBarTabList.contact];
 
     switchLang(event: any) {
       this.tradService.setCurrentLang(event.target.value)

@@ -29,6 +29,7 @@ export class TranslateService {
     formations: 'Diplômes',
     experiences: 'Expériences',
     contact: 'Contact',
+    candidate: 'Candidatures',
 
     //home
     hello: 'Bonjour,',
@@ -118,6 +119,7 @@ export class TranslateService {
     formations: 'Education',
     experiences: 'Experiences',
     contact: 'Contact',
+    candidate: 'Applications',
 
     //home
     hello: 'Hello,',
