@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateService } from '../translate.service';
 import { TabService } from '../tab.service';
+import { RouterLink } from '@angular/router';
 
 export enum NavBarTabList  {
   home = 'home',
@@ -14,7 +15,7 @@ export enum NavBarTabList  {
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
@@ -30,4 +31,11 @@ export class NavBarComponent {
     switchTab(tab: NavBarTabList) {
       this.tabService.setCurrentTab(tab);
     }
+
+    getTabLink(tab: NavBarTabList): string {
+      return `/${tab}`;
+    }
 }
+
+
+//<button (click)="switchTab(list)" class="button">{{tradService.getTrad(list)}}</button>

@@ -3,8 +3,8 @@
         Cédric Gibelli
     </div>
     <div class="hbox">
-        <div *ngFor="let list of buttonList">
-            <button (click)="switchTab(list)" class="button">{{tradService.getTrad(list)}}</button>
+        <div *ngFor="let list of buttonList"  class="button">
+            <a routerLink="{{getTabLink(list)}}" routerLinkActive="active" class="tabLink">{{tradService.getTrad(list)}}</a>
         </div>
         <select class="switchLangButton" (change)="switchLang($event)">
             <option value="fr">Français</option>

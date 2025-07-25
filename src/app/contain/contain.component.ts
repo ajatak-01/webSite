@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from "../home/home.component";
-import { TabService } from '../tab.service';
+import { RouterOutlet } from '@angular/router';
 import { NavBarTabList } from '../nav-bar/nav-bar.component';
-import { SkillsComponent } from '../skills/skills.component';
-import { ContactComponent } from '../contact/contact.component';
-import { FormationComponent } from '../formation/formation.component';
-import { XpComponent } from '../xp/xp.component';
-import { CandidaturesModule } from '../candidatures/candidatures.module';
+import { TabService } from '../tab.service';
 
 @Component({
   selector: 'app-contain',
-  imports: [HomeComponent, SkillsComponent, ContactComponent, FormationComponent, XpComponent, CandidaturesModule],
+  imports: [RouterOutlet],
   templateUrl: './contain.component.html',
   styleUrl: './contain.component.scss'
 })

@@ -17,6 +17,9 @@
     background-color: #c4c2c2;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
 }
 
 .button:hover {
@@ -28,4 +31,9 @@
     background-color: #c4c2c2;
     border: none;
     cursor: pointer;
+}
+
+.tabLink {
+    color: black;
+    text-decoration: none;
 }

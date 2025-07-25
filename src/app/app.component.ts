@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { ContainComponent } from './contain/contain.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NavBarComponent, ContainComponent],
+  imports: [NavBarComponent, CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
