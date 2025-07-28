@@ -1,1 +1,15 @@
-<p>candidatures works!</p>
+<clr-datagrid>
+    <clr-dg-column>Entreprise</clr-dg-column>
+    <clr-dg-column>Statut</clr-dg-column>
+    <clr-dg-column>Date de candidature</clr-dg-column>
+    <clr-dg-column>Nombre d'entretiens</clr-dg-column>
+    <clr-dg-column>Commentaire</clr-dg-column>
+
+    <clr-dg-row *ngFor="let candidature of candidatures">
+        <clr-dg-cell>{{ candidature.company }}</clr-dg-cell>
+        <clr-dg-cell>{{ candidature.status }}</clr-dg-cell>
+        <clr-dg-cell>{{ candidature.ApplicationDate }}</clr-dg-cell>
+        <clr-dg-cell>{{ candidature.interviewNumber }}</clr-dg-cell>
+        <clr-dg-cell>{{ candidature.note }}</clr-dg-cell>
+    </clr-dg-row>
+</clr-datagrid>
