@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { Candidature, CandidatureStatus } from '../shared/model/candidature';
 import { ClarityModule } from "@clr/angular";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-candidatures',
   templateUrl: './candidatures.component.html',
   styleUrl: './candidatures.component.scss',
-  imports: [ClarityModule, BrowserAnimationsModule],
+  standalone: false,
 })
 export class CandidaturesComponent {
 

@@ -4,10 +4,10 @@ import { ExperienceTitleComponent } from '../experience-title/experience-title.c
 
 @Component({
   selector: 'app-formation',
-  imports: [ExperienceTitleComponent],
+  standalone: false,
   templateUrl: './formation.component.html',
   styleUrl: './formation.component.scss'
 })
 export class FormationComponent {
-  constructor(public trad: TranslateService) {}
+  constructor(public trad: TranslateService) { }
 }

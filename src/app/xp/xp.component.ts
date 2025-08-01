@@ -4,10 +4,10 @@ import { TranslateService } from '../translate.service';
 
 @Component({
   selector: 'app-xp',
-  imports: [ExperienceTitleComponent],
+  standalone: false,
   templateUrl: './xp.component.html',
   styleUrl: './xp.component.scss'
 })
 export class XpComponent {
-  constructor(public trad: TranslateService) {}
+  constructor(public trad: TranslateService) { }
 }

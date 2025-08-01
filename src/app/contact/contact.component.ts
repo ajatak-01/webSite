@@ -5,12 +5,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-contact',
-  imports: [FontAwesomeModule],
+  standalone: false,
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(public trad: TranslateService) {}
+  constructor(public trad: TranslateService) { }
 
   faPhone = faPhone;
   faEnvelope = faEnvelope;

@@ -4,7 +4,7 @@ import { TranslateService } from '../translate.service';
 import { TabService } from '../tab.service';
 import { RouterLink } from '@angular/router';
 
-export enum NavBarTabList  {
+export enum NavBarTabList {
   home = 'home',
   skills = 'skills',
   formations = 'formations',
@@ -15,26 +15,26 @@ export enum NavBarTabList  {
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [CommonModule, RouterLink],
+  standalone: false,
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-    constructor(public tradService: TranslateService, private tabService: TabService) {}
+  constructor(public tradService: TranslateService, private tabService: TabService) { }
 
-    buttonList = [NavBarTabList.candidate, NavBarTabList.home, NavBarTabList.skills, NavBarTabList.formations, NavBarTabList.experiences, NavBarTabList.contact];
+  buttonList = [NavBarTabList.candidate, NavBarTabList.home, NavBarTabList.skills, NavBarTabList.formations, NavBarTabList.experiences, NavBarTabList.contact];
 
-    switchLang(event: any) {
-      this.tradService.setCurrentLang(event.target.value)
-    }
+  switchLang(event: any) {
+    this.tradService.setCurrentLang(event.target.value)
+  }
 
-    switchTab(tab: NavBarTabList) {
-      this.tabService.setCurrentTab(tab);
-    }
+  switchTab(tab: NavBarTabList) {
+    this.tabService.setCurrentTab(tab);
+  }
 
-    getTabLink(tab: NavBarTabList): string {
-      return `/${tab}`;
-    }
+  getTabLink(tab: NavBarTabList): string {
+    return `/${tab}`;
+  }
 }
 
 

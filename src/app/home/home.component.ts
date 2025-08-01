@@ -3,14 +3,14 @@ import { TranslateService } from '../translate.service';
 
 @Component({
   selector: 'app-home',
-  imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  standalone: false,
 })
 export class HomeComponent {
-  constructor(public trad: TranslateService) {}
+  constructor(public trad: TranslateService) { }
 
   getPicHref() {
-    return 'assets/CV-cedric-gibelli-' + this.trad.currentLang +'.pdf';
+    return 'assets/CV-cedric-gibelli-' + this.trad.currentLang + '.pdf';
   }
 }
